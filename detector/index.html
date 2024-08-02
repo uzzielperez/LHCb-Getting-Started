@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detector Viewer with Notes</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    canvas {
+      border: 1px solid #ccc;
+      cursor: crosshair;
+    }
+    #info {
+      margin-top: 20px;
+      border-top: 1px solid #ccc;
+      padding-top: 20px;
+      width: 80%;
+      max-width: 600px;
+    }
+    #notes {
+      font-size: 1.2em;
+    }
+    #note-input {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Detector Viewer</h1>
+  <canvas id="detector-canvas" width="800" height="600"></canvas>
+
+  <div id="info">
+    <h2>Notes</h2>
+    <div id="notes">Drag on the image to create a note.</div>
+    <textarea id="note-input" rows="4" cols="50" placeholder="Enter your note here..."></textarea>
+    <button onclick="saveNote()">Save Note</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
