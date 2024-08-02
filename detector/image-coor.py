@@ -1,8 +1,8 @@
 import cv2
 
 # Load the image
-#image_path = 'LHCB PREVIEW-white-bg.jpg'
-image_path = 'LHCbMSokoloff.png'
+image_path = 'LHCB PREVIEW-white-bg.jpg'
+# image_path = 'LHCbMSokoloff.png'
 image = cv2.imread(image_path)
 
 # Define the callback function to display the coordinates
