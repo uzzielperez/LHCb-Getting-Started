@@ -15,7 +15,7 @@ Notes on getting started with LHCb analysis and reconstruction
 ``````
 cd /Users/uzzielperez/Desktop/Projects/LHCb-Getting-Started
 python3 -m venv lhcbenv
-source env/bin/activate
+source lhcbenv/bin/activate
 pip install opencv-python tensorflow
 ``````
 
